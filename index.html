@@ -3,10 +3,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>La La Land</title>
+    <title>La La Land - Movie Site</title>
     <link href="css/style.css"
     rel="stylesheet" type="text/css">
     <script src="https://kit.fontawesome.com/22d244adca.js" crossorigin="anonymous"></script>
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
 </head>
     
 <body>
@@ -26,13 +30,15 @@
 <br>
     
 <div class="title">
-    <h1>La La Land</h1>
+    <h1 id="title">La La Land</h1>
 </div>
     
 <div class="mainimage">
     <img src="img/main.webp" alt="La La Land">
 </div>
 
+    
+<!-- even columns for synopsis, director, and genre -->
 <div class="row1">
   <div class="column1" id="leftcolumn">
       <h1><i class="fa-solid fa-film"></i> Synopsis <i class="fa-solid fa-film"></i></h1>
@@ -49,34 +55,85 @@
       <p>La La Land is a romantic musical drama that blends elements of classic Hollywood musicals with contemporary storytelling.It pays homage to the Golden Age of musicals with vibrant cinematography, elaborate dance sequences, and a jazz-infused score, while also incorporating elements of romance and drama. The film balances the whimsical and nostalgic aspects of traditional musicals with a more bittersweet, realistic narrative, making it a modern yet timeless take on the genre.</p>
   </div>
 </div>
+
+<div class="stars">    
+    <img src="img/stars.png" alt="Stars">
+</div>
     
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0pdqf4P9MB8?si=5LQTSrORtmAt1Lbm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div class="row3">
+    <div class="column3" id="trailerleft">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/0pdqf4P9MB8?si=5LQTSrORtmAt1Lbm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="column3" id="textright">
+        <h1><span style="color:purple">Raving</span> Reviews!</h1>
+        <article>
+            <h2>The Guardian</h2>
+            <p>"I was utterly absorbed by this movie’s simple storytelling verve and the terrific lead performances from Ryan Gosling and Emma Stone who are both excellent – particularly Stone, who has never been better." -- Peter Bradshaw</p>
+        </article>
+        <article>
+            <h2>The Hollywood Reporter</h2>
+            <p>"For Chazelle to be able to pull this off the way he has is something close to remarkable. The director's feel for a classic but, for all intents and purposes, discarded genre format is instinctive and intense." -- Todd McCarthy</p>
+        </article>
+        <article>
+            <h2>Rolling Stone</h2>
+            <p>"What makes La La Land such a hot miracle is how the passion for cinema and its possibilities radiates from every frame." -- Peter Travers</p>
+        </article>
+    </div>
+</div>
     
-    <audio src="media/coin.wav" controls></audio>
-    <video src="media/cat.mp4" controls></video>
+    <img src="img/griffith.jpg" id="float">
     
-    <table>
-        <tr>
-            <td>text</td>
-            <td>text</td>
-        </tr>
-    </table>
+    <p id="clear">Many real-life locations were used in the film, such as the Griffith Observatory!</p>
     
+<blockquote cite="https://griffithobservatory.org/about/observatory-history/">
+    Since the doors opened in 1935, Griffith Observatory has become the most-visited public observatory in the world. The Observatory’s history starts with the vision of one man and reflects the invention, innovation, and inspiration that also characterize Los Angeles.
+</blockquote>
+    
+    <!-- audio not using <audio src="media/coin.wav" controls></audio> -->
+    <video src="media/cityofstars.mp4" controls></video>
+
+<h3>Money <span style="font-style:italic">La La Land</span> Made in the First Few Weeks</h3>
+<table>
+    <tr>
+        <th>Week</th>
+        <th>Number of Theaters</th>
+        <th>Gross</th>
+    </tr>
+    <tr>
+        <td>Week 1</td>
+        <td>5 theaters</td>
+        <td>$881,107</td>
+    </tr>
+    <tr>
+        <td>Week 2</td>
+        <td>200 theaters</td>
+        <td>$4.1 million</td>
+    </tr>
+    <tr>
+        <td>Week 3</td>
+        <td>734 theaters</td>
+        <td>5.8 million</td>
+    </tr>
+</table>
+    
+<br>
+ 
+<!-- id tag needed for nav link (even though there is no CSS styling) -->
 <div class="cast" id="cast">
     <h1>Cast</h1>
     
 <div class="row2">
   <div class="column2" id="firstcolumn">
       <img src="img/emmastone2.webp" alt="Emma Stone">
-      <h2>Emma Stone</h2>
+      <h1>Emma Stone</h1>
   </div>
   <div class="column2" id="secondcolumn">
       <img src="img/ryangosling.jpg" alt="Ryan Gosling">
-      <h2>Ryan Gosling</h2>
+      <h1>Ryan Gosling</h1>
   </div>
   <div class="column2" id="thirdcolumn">
       <img src="img/jksimmons.jpg" alt="JK Simmons">
-      <h2>J.K. Simmons</h2>
+      <h1>J.K. Simmons</h1>
   </div>
 </div> 
     
@@ -84,9 +141,22 @@
 
 <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/304521657&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/noureldin1" title="NourEldin A.Mohamed" target="_blank" style="color: #cccccc; text-decoration: none;">NourEldin A.Mohamed</a> · <a href="https://soundcloud.com/noureldin1/lala-land-piano" title="LaLa Land (Piano)" target="_blank" style="color: #cccccc; text-decoration: none;">LaLa Land (Piano)</a></div>
     
+    <p id="form">Enter your email address and receive updates!</p>
+    <form method="post">
+        <input type="text">
+        <button>SUBMIT</button>
+    </form>
+    
 <br>   
     
-</div>   
+</div> 
+    
+<footer>
+    <small>
+      Website by Olivia Kriley - Foundations in Web Design and Strategy, Spring 2025
+    </small>
+</footer>
+    
 </body>
 
 </html>
